@@ -1,8 +1,61 @@
+
 body {
-    background-color: tomato;
+    /* Set the Font style for the entire page*/
     font-family: helvetica, Arial, sans-serif;
+    /* Set the font color for the li bullets and h2  only*/
+    color: #39a6b2;
 }
 h1 {
     font-size: 100px;
-
 }
+header {
+    /* Style header  20px from Top Bottom and from 35px to Left Right*/
+        padding: 20px 35px;
+        /* Set color for the header page background  and hide bullet color*/
+        background-color: #39a6b2;
+    }
+    
+header h1 {
+    /* Adjust Elements */
+/* bold Runn Buddy header  */
+   font-weight: bold;
+   /* reduce font size for header Runn Buddy */
+   font-size: 36px;
+   /* Color here change nothing */
+   color: #fce138;
+   /* Reduce top Bottom margin */
+   margin: 0;
+/* ul li inline with  RB header in same box */
+   display: inline;
+}
+header a {
+/* color here change the RB header only */
+    color: #fce138;
+    /* remove the underline from RB header and h1 */
+    text-decoration: none;
+}
+header nav {
+/* shift ul li items to the right and outside the RB Box */
+    float: right;
+/* move ul li items down from RB box and Adjust list to right*/
+    margin: 7px 0;
+}
+header nav ul li {
+/* Display ul li items horizontally */
+    display: inline;
+}
+header nav ul li a {
+/* npt sure what the zero is for 30px is space between ulli items */
+    margin: 0 30px;
+/* no visible chaange ? */
+    font-weight: lighter;
+/* enlarger fonts in list */
+    font-size: 22px;
+}
+* {
+/* this move boby up to header and ul li items patially into header box */
+    margin: 0;
+/* why both used seeems like thye do the same thing */
+    padding: 0;  
+}
+    
