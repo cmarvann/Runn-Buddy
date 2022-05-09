@@ -1,4 +1,11 @@
-
+* {
+    /* this move body up to header and ul li items patially into header box */
+        margin: 0;
+    /* why both used seeems like thye do the same thing */
+        padding: 0;  
+    /* bring the footer inline with the body, part was off the page */
+        box-sizing: border-box;
+    }
 body {
     /* Set the Font style for the entire page*/
     font-family: helvetica, Arial, sans-serif;
@@ -13,8 +20,7 @@ header {
         padding: 20px 35px;
         /* Set color for the header page background  and hide bullet color*/
         background-color: #39a6b2;
-    }
-    
+    } 
 header h1 {
     /* Adjust Elements */
 /* bold Runn Buddy header  */
@@ -52,10 +58,117 @@ header nav ul li a {
 /* enlarger fonts in list */
     font-size: 22px;
 }
-* {
-/* this move boby up to header and ul li items patially into header box */
-    margin: 0;
-/* why both used seeems like thye do the same thing */
-    padding: 0;  
+footer {
+/* color background of h2 footer */
+    background: #fce138;
+/* not sure what this does */
+    width: 100%;
+/* create larger box for footer and create even space between top botom of box */
+/* used same property declarations for header and footer */
+   padding: 40px 35px;
+} 
+/* style h2 element */
+footer h2 {
+    /* Not sure here  */
+    display: inline;  
+    /* change color of h2 fonts only */
+     color: #024e76;
+    /* make h2 only fonts larger */
+      font-size: 30px;
+    /* dont see the change */
+      margin: 0;
+    }
+/* Style the right div container */
+footer div {
+/* float div to right of page */
+    float: right;
+/* adjust div vertical space between line items */
+    line-height: 1.5;
+/* align div more right */
+    text-align: right;
 }
-    
+footer a {
+/* change font color or all except h2 */
+    color: #024e76;
+}
+section div {
+/* create space between Hero area and h2 */
+    font-weight: bold;
+    font-size: 10px;
+}
+
+/* Start Styling for Hero */
+.hero {
+/* Remove duplicate image from Hero */
+    background-image: url("/Run-Buddy/assets/css/images/hero-bg.jpg");
+/* Increase hero box size */
+    height: 600px;
+/* makeimage smaller */
+    background-size: cover;
+/* image more more tho the right */
+    background-position: center;
+/* position the hero exatly as intended */
+    padding: 60px;
+    position: relative;
+
+
+}
+.hero-form {
+ /* This property set the color for the element */
+     background-color: #fce138;
+/* set inner margin, set spacing top and bottom for form*/
+     padding: 20px;
+/* reduce right side of form */
+    width: 500px;
+/* color fonts in form */
+    color: #024e76;
+    border: 3px solid #024e76;
+/* POSITION THE HERO FORM */
+/* dont see any change */
+    position: absolute;
+/* shift hero to the left bottom at 0px*/
+/* when change to 120px move up in right corner */
+    bottom: 120px;
+/* shift hero extreme right  at 0px */
+/* shift hero to left at 140px */
+    right: 140px;
+    }
+.hero-form h3 {
+/* make hero larger */
+    font-size: 24px;
+}
+.hero-form p {
+    /* move hero up */
+    margin: 5px 0 15px 0;
+}
+.form-input {
+/* Add Border Display */
+/* make hero shift down */  
+    border: 1px solid #024e76;
+/* move hero upward */
+   display:block;
+/* shift hero upward*/
+padding: 7px 15px;
+/* no change */
+    color: #024e76;
+/* widen name and email section */
+    width: 100%;
+/* shift hero upward*/
+    margin-bottom: 15px;
+    }
+.hero-form label {
+/* adjust hero box evenly */
+    margin: 0 5px;
+}
+.hero-form button {
+/* change Get Running Sutton to dark blue background */
+    background-color: #024e76;
+/* increase font size for GR button */
+    font-size: 16px;
+/* make GT Button larger */
+    padding: 10px 20px;
+/* font yellow */
+    color: #fce138;
+/* remove GR button border */
+    border: none;
+}  

@@ -9,7 +9,7 @@
 <body>
     <header>
      <h1>
-      <a href="/">RUNN BUDDY</a>
+      <a href="/">RUN BUDDY</a>
      </h1>
      <nav>
         <!-- Unordered list element-->
@@ -31,14 +31,50 @@
         </ul>
     </nav>
     </header>
+    <!--Add div element to section-->
+    <!--Hero Section-->
+    <!--Add class Attribute-->
+    <section class="hero">
+    <!--Add element and contnet for heading and p-->
+     <div Class="hero-form">
+      <h3>Get Started Today</h3>
+      <p>Fill out this form and one of our trainers will schedule a consult</p>
+    <!--Add Form Elemant-->
+    <form>
+        <label for="name">Enter full name here </label>
+        <input type="text" placeholder="Full Name" name="name" id="name" class="form-input">
+        <label for="email">Enter email address here</label>
+        <input type="text" placeholder="Email Address" name="email" id="email" class=form-input>
+        <label for="phone">Enter telephone phone number here</label>
+        <input type="text" placeholder="Phone Number" name="phone" id="phone" class="form-input>
+    <!--Add Radio Button Input-->
+    <p>
+        Have you worked out with a trainer before?
+        <input type="radio" name="trainer-confirm" id="traineer-yes"/>
+        <label for="trainer-yes">Yes</label>
+        <input type="radio" name="trainer-confirm" id="traineer-no"/>
+        <label for="trainer-no">No</label>
+    </p>
+    <p>
+     <label for="checkbox">
+         I acknowledge that I am at least 18 years of age.
+     </label>
+     <input type="checkbox" name="age-confirm" id="checkbox">
+    </p>
+    <button type="submit">Get running!</button>
+    </form>
+     </div>
+    </section>
     <h2>What we do</h2>
     <h2>What you do</h2>
     <h2>Meet the trainers</h2>
     <h2>Reach Out</h2>
 
     <footer>
-        <h2>❤️ Made with love by Runn Buddy </h2>
+      <h2>❤️ Made with love by Run Buddy </h2>
+    <div>
+     <a href="#">Read Our Privacy Policy</a><br/> &copy; 2022 Run Buddy, Inc 
+    </div>
     </footer>
-    <a href="./privacy-policy.html">View Our Privacy Policy</a>
 </body>
 </html>
