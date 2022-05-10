@@ -105,17 +105,7 @@ padding: 7px 15px;
 .intro {
     text-align: center;
 }
-.intro h2 {
-    font-size: 55px;
-    color: #024e76;
-    padding: 0 100px 20px 100px;
-    margin-bottom: 35;
-    border-bottom: 3px solid;
-    border-color: #fce138;
-}
-.intro h2 {
-    display: inline-block;
-}
+
 .intro p {
     font-size: 20px;
     color: #39a6b2;
@@ -124,3 +114,48 @@ padding: 7px 15px;
 /* center the entir p tag para */
     margin: 0 auto;
 }
+
+.steps {
+    background: #fce138;
+    text-align: center;
+}
+
+.section-tile {
+    font-size: 55px;
+    color: #024e76;
+    border-bottom: 3px solid;
+    padding: 0 100px 0 100px;
+    margin-bottom: 35px;
+    display: inline-block;
+}
+
+.primary-border {
+    border-color: #fce138;
+}
+
+.secondary-border {
+    border-color: #39a6b2;
+}
+
+.steps div {
+    margin-bottom: 80px;
+}
+
+.steps img {
+     width: 15%;
+    }
+
+.steps h3 {
+    font-size: 46px;
+    margin-top: 10px;
+    color: #024e76;
+}
+
+.steps p {
+    color: #39a6b2;
+    font-size: 23px;
+}
+.steps span {
+    font-size: 38px;
+}
+
