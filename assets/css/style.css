@@ -59,6 +59,7 @@ section div {
     font-weight: bold;
     font-size: 10px;
 }
+
 .hero-form {
     border: solid 3px #024e76;
     background-color: #fce138;
@@ -71,7 +72,7 @@ section div {
     }
 
     .hero {
-        background-image: url("/Run-Buddy/assets/images/hero-bg.jpg");
+        background-image: url("/assets/images/hero-bg.jpg");
         height: 600px;
         background-size: cover;
         background-position: center;
@@ -172,19 +173,16 @@ section div {
 }
 
 .trainers {
-/* center meet the tainers and first trainer info */
+/* center meet the tainers and  trainer info */
     text-align: center;
-   
-    
-
 }
 
 .trainer {
-/* shift first trainer info to the left */
+/* shift first trainer info to the left affects GST */
     width: 900px;
 /* center first trainer info */
     margin: 0 auto 30px auto;
-/* color first trainer background */
+/* color first trainer background  affects GST*/
     background: #024e76;
 /* color first trainer para */
     color: #fce138;
@@ -225,7 +223,7 @@ section div {
 }
 .trainer-bio h4 {
     font-weight: lighter;
-    font-size: 25px;
+    font-size: 26px;
     /* space bet ss and p tag */
     margin-bottom: 25px;
 }
