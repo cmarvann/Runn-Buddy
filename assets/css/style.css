@@ -3,6 +3,7 @@
         padding: 0;  
         box-sizing: border-box;
     }
+
 body {
     font-family: helvetica, Arial, sans-serif;
 }
@@ -60,7 +61,7 @@ section  {
 }
 
 .hero {
-    background-image: url("/Runn-Buddy/assets/images/hero-bg.jpg");
+    background-image: url("/All-Projects/Runn-Buddy/assets/images/hero-bg.jpg");
     height: 600px;
     background-size: cover;
     background-position: center;
@@ -153,7 +154,7 @@ section  {
     font-size: 46px;
     margin-top: 10px; 
 }
-`1
+
 .steps span {
     font-size: 38px;
 }
