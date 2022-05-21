@@ -5,51 +5,63 @@
     }
 
 body {
+    color: #39a6b2;
     font-family: helvetica, Arial, sans-serif;
 }
-h1 {
-    font-size: 100px;
-}
+
 header {
         padding: 20px 35px;
         background-color: #39a6b2;
-    } 
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
 header h1 {
    font-weight: bold;
    font-size: 36px;
    color: #fce138;
    margin: 0;
-   display: inline;
 }
+
 header a {
     color: #fce138;
     text-decoration: none;
 }
 header nav {
-    float: right;
     margin: 7px 0;
 }
-header nav ul li {
-    display: inline;
+
+header nav ul {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   list-style: none;
 }
+
 header nav ul li a {
-    margin: 0 30px;
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 22px;
 }
+
 footer {
     background: #fce138;
     width: 100%;
    padding: 40px 35px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
 } 
-footer h2 {
-    display: inline;  
+
+footer h2 {  
      color: #024e76;
       font-size: 30px;
       margin: 0;
     }
+
 footer div {
-    float: right;
     line-height: 1.5;
     text-align: right;
 }
@@ -61,25 +73,47 @@ section  {
 }
 
 .hero {
-    background-image: url("/All-Projects/Runn-Buddy/assets/images/hero-bg.jpg");
+    background-image: url("/assets/images/hero-bg.jpg");
     height: 600px;
     background-size: cover;
     background-position: center;
     position: relative; 
+    align-items: flex-start;
     }
-
+/* style Start building Habits SBH */
+.hero-cta {
+    /* move STH to left */
+    width: 35%;
+    /* move text margin to right */
+    text-align: right;
+    /* move text doen from hero top */
+    margin: 3.5%;
+    /* color tex */
+    color: #fff;
+    /* size text */
+    font-size: 18px;
+    /* space bet line SBH */
+    line-height: 1.2;
+}
+/* style STH Header */
+.hero-cta h2 {
+/* style hearder */
+    font-style: italic;
+    /* style hearder font */
+    font-size: 55px;
+    /* color header font */
+    color: #fce138;
+}
 .hero-form {
-    border: solid 3px #024e76;
+    border: 3px solid  #024e76;
     background-color: #fce138;
     padding: 20px;
-    width: 500px;
+    width: 40%;
     color: #024e76;
-    position: absolute;
-    bottom: 120px;
-    right: 140px;
+    margin: 3.5%;
     }
 
-    .hero-form h3 {
+.hero-form h3 {
         font-size: 24px;
         margin: 0;
     }
@@ -109,19 +143,26 @@ section  {
     padding: 10px 20px;
     font-size: 16px;
 }  
-/* Title Style */
+/* Title headers all Style */
 .section-title {
-    font-size: 55px;
+    font-size: 48px;
+    text-align: center;
     color: #024e76;
-    padding: 0 100px 20px 100px;
-    margin-bottom: 35;
+    margin: 0 auto 35px auto;
     border-bottom: 3px solid;
-    display: inline-block;
+    width: 50%;
+    padding-bottom: 20px;
+
 }
 
 .primary-border {
     border-color: #fce138;
 }
+
+.secondary-border {
+    border-color: #39a6b2;
+}
+
 .intro {
     text-align: center;
 }
@@ -135,33 +176,55 @@ section  {
 }
 
 .steps {
-    text-align: center;
-    background: #fce138;
-    
+    background: #fce138; 
 }
 
-.steps div {
-    margin-bottom: 80px;
+.step  {
+    margin-bottom: 50px;
+    margin: 50px auto;
+    width: 80%;
+    border-bottom: 1px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.steps img {
-    width: 15%;
-    margin: 10px 0;
-   }
-
-.steps h3 {
+.step h3 {
     color: #024e76;
     font-size: 46px;
-    margin-top: 10px; 
+    flex: 1 30%; 
 }
 
-.steps span {
-    font-size: 38px;
+.step-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.steps p {
+.step-img {
+    flex: 1 12%;
+    margin-right: 20px;
+   }
+
+.step-img img {
+    max-width:  100%
+   }
+
+.step-text {
+    flex: 12;
+}
+
+.step-text p {
     color: #39a6b2;
-    font-size: 23px;
+    font-size: 18px;
+}
+
+.step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: #024e76;
 }
 
 .trainers {
@@ -268,4 +331,94 @@ section  {
 
 .text-right {
     text-align: right;
+}
+
+.flex-row {
+    display: flex;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 980px) {
+    header {
+        /* applied to any screen < 980px */
+        padding-bottom: 0;
+        justify-content: center;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+    .section-title {
+        width: 80%;
+    }
+    .trainer {
+        flex: 0 70%;
+    }
+    .contact-info iframe {
+        flex: 1 100%;
+    }
+}
+
+/* Media Query for Tables or less */
+@media screen and (max-width: 768px) {
+    section {
+/* any screen bet 768 and 575 px */
+        padding: 30px 15px;
+    }
+    .step h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+    .step-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .step-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .step-text {
+        flex: 100%;
+    }
+}
+
+/* Media Query for mobile phone or less */
+@media screen and (max-width: 575px) {
+    .hero-form button {
+/* any screen < 575 px */
+        width: 100%;
+    }
+    .section-title {
+        width: 95%;
+    }
+    .intro p {
+        width: 100%;
+    }
+    .trainer {
+        flex: 0 100%;
+    }
+    .contact-info {
+        text-align: center;
+    }
+    .contact-info > * {
+        flex: 0 100%;
+    }
+    .contact-form {
+        order: 3;
+    }
 }
