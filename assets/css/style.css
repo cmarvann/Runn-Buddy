@@ -47,7 +47,7 @@ header nav {
     margin: 7px 0;
 }
 
-header nav ul {
+header nav ul  {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
@@ -143,6 +143,7 @@ section  {
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
 /* add round corners to form */
     border-radius: 15px;
+   
     }
 
 .hero-form button:hover {
