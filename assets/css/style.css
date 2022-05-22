@@ -285,20 +285,25 @@ section  {
 .trainers {
 /* center meet the tainers and  trainer info */
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 100%;
     
 }
 
 .trainer {
 /* shift first trainer info to the left affects GST */
-    width: 900px;
+   
 /* center first trainer info */
-    margin: 0 auto 30px auto;
+    margin: 20px;
 /* color first trainer background  affects GST*/
     background: #024e76;
 /* color first trainer para */
     color: #fce138;
-/* add background color and position first trainer box */
-    overflow: auto;
+    flex: 1;
+
 }
 
 .trainer img {
