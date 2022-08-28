@@ -631,7 +631,7 @@ section  {
 .trainer-bio h4 {
     display: block;
 }
-}
+
 
 /* Media Query for mobile phone or less */
 @media screen and (max-width: 575px) {
